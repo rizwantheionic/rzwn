@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Nilai
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Nilai</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Table Nilai</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <table class="dtab2">
+        <tr>
+          <th>No Urut</th>
+          <th>Subject</th>
+          <th>Score</th>
+          <th>Point</th>
+        </tr>
+        <tr *ngFor="let data of allData">
+          <td>{{data.no_urut}}</td>
+          <td>{{data.subject}}</td>
+          <td>{{data.score}}</td>
+          <td>{{data.point}}</td>
+        </tr>
+
+      </table>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
